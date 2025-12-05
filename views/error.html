@@ -1,0 +1,12 @@
+<!-- views/error.html -->
+<div class="error-page">
+  <h2>{{titulo}}</h2>
+  <p>{{mensaje}}</p>
+  {{#if error}}
+  <details>
+    <summary>Detalles técnicos</summary>
+    <pre>{{error}}</pre>
+  </details>
+  {{/if}}
+  <a href="/" class="btn-secondary">Volver al Inicio</a>
+</div>

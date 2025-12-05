@@ -1,0 +1,26 @@
+<!-- views/productos.html -->
+<h2>{{titulo}}</h2>
+
+{{#if filtros}}
+<div class="filtros-activos">
+  <h3>Filtros aplicados:</h3>
+  {{#each filtros}}
+  <span class="filtro">{{@key}}: {{this}}</span>
+  {{/each}}
+</div>
+{{/if}}
+
+<div class="productos-grid">
+  {{#each productos}}
+  <div class="producto-card">
+    <h3>{{nombre}}</h3>
+    <p class="precio">${{precio}}</p>
+    <p class="categoria">{{categoria}}</p>
+    <a href="/productos/{{id}}" class="btn-primary">Ver Detalles</a>
+  </div>
+  {{/each}}
+</div>
+
+{{#if productos.length}}
+<p>Total: {{productos.length}} productos</p>
+{{/if}}

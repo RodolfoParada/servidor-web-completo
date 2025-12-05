@@ -1,0 +1,24 @@
+<!-- views/home.html -->
+<div class="hero">
+  <h2>{{titulo}}</h2>
+  <p>Descubre nuestros productos de calidad</p>
+  <a href="/productos" class="btn-primary">Ver Productos</a>
+</div>
+
+<section class="productos-destacados">
+  <h3>Productos Destacados</h3>
+  <div class="grid-productos">
+    {{#each productos}}
+    <div class="producto-card">
+      <h4>{{nombre}}</h4>
+      <p class="precio">${{precio}}</p>
+      <span class="categoria">{{categoria}}</span>
+      <a href="/productos/{{id}}" class="btn-secondary">Ver Detalles</a>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+<section class="info">
+  <p>Hoy es {{fecha}}</p>
+</section>
