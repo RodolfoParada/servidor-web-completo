@@ -6,9 +6,17 @@
   <h3>Filtros aplicados:</h3>
   {{#each filtros}}
   <span class="filtro">{{@key}}: {{this}}</span>
+  
   {{/each}}
 </div>
 {{/if}}
+
+
+<form action="/productos/upload" method="POST" enctype="multipart/form-data" class="upload-form">
+  <label>Subir imagen de producto:</label>
+  <input type="file" name="imagen" required>
+  <button type="submit">Subir Archivo</button>
+</form>
 
 <div class="productos-grid">
   {{#each productos}}
@@ -20,6 +28,7 @@
   </div>
   {{/each}}
 </div>
+
 
 {{#if productos.length}}
 <p>Total: {{productos.length}} productos</p>

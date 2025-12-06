@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/RodolfoParada/servidor-web-completo/issues"
   },
-  "homepage": "https://github.com/RodolfoParada/servidor-web-completo#readme"
+  "homepage": "https://github.com/RodolfoParada/servidor-web-completo#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express-session": "^1.18.2",
+    "multer": "^2.0.2"
+  }
 }

@@ -1,0 +1,4 @@
+[
+  {"id":1,"nombre":"Laptop Gaming","precio":1200,"categoria":"Electrónica"},
+  {"id":2,"nombre":"Mouse Inalámbrico","precio":50,"categoria":"Accesorios"}
+]
